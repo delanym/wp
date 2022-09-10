@@ -1,0 +1,21 @@
+---
+  users:
+    'sol':
+      comment: 'Delany'
+      uid: '1010'
+      sshkeys:
+        - 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOPC5TrzDizKdBDLFQrnBaiNSiZg+lxPnUEDeSLnfQPz sol@hri'
+  allow_users:
+    - 'sol'
+    - 'ubuntu'
+  sudoers:
+    - 'sol'
+    - 'ubuntu'
+  classes:
+    - profile::ntp
+    - profile::puppet
+    - profile::ssh
+    - profile::sudoers
+    - profile::timezone
+    - profile::users
+    - wordpress
